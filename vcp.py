@@ -31,3 +31,6 @@ def main():
             parts = command.split(" ", 1)
 
             os.system(f"start {parts[1]}")
+
+if __name__ == "__main__":
+    main()
